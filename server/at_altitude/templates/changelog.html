@@ -1,0 +1,45 @@
+<p>2015-07-14: Server side up and stumbling.</p>
+
+<p>Django app server running locally with basic splash screen running on Django v1.8.3 on Python v3.4.3 on a Docker container on Mac OSX 10.10.4.</p>
+
+<p>Django app can be launched on Bluemix without a container from the command line but not from jazzhub Build and Run.</p>
+
+<p>Current issues:</p>
+<ul>
+<li>Need a team of Pythonistas!</li>
+<li>Need user stories.</li>
+<li>Server can be run on Bluemix but not yet on containers...</li>
+    * I can log into Bluemix and IBM Containers and it tells me that my private Bluemix repository is <code>registry.stage1.ng.bluemix.net/cclauss</code> but can not run <code>docker images</code> or <code>docker ps</code>.  See <code>bluemix_images.sh</code>
+<li>Client for iOS is currently just a few code fragments.</li>
+</ul>
+
+<p>Local: Mac OSX 10.10.4</p>
+
+<ul>
+<li><p><a href="http://brew.sh">homebrew</a> <code>brew install --upgrade</code>...</p>
+
+<ul>
+<li>python3</li>
+<li>git</li>
+<li>boot2docker</li>
+<li>docker (v.1.7.0 is ahead of Bluemix Containers which needs v1.6.0!!)</li>
+<li>docker-compose</li>
+<li>brew-cask</li>
+</ul></li>
+<li><p><a href="http://caskroom.io">Homebrew Cask</a> <code>brew cask install</code>...</p>
+
+<ul>
+<li>cloudfoundry-cli</li>
+<li>pycharm-ce (optional but recommended)</li>
+</ul></li>
+<li><p><a href="https://pypi.python.org/pypi">pip</a> <code>pip3 install --upgrade</code>...</p>
+
+<ul>
+<li>pip</li>
+<li>setuptools</li>
+<li>Django</li>
+<li>virtualenv (optional but recommended)</li>
+</ul></li>
+</ul>
+
+<p>Install by hand <a href="https://www.ng.bluemix.net/docs/starters/container_cli_ov.html">IBM Containers Cloud Foundry plug-in</a>  (You must be logged into Bluemix to download.)</p>
